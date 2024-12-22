@@ -70,14 +70,14 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/redux.png"],
     link: "https://github.com/muhammedsouban/Gadtech.Store",
   },
-  // {
-  //   id: 2,
-  //   title: "DestinyEuro - Study Abroad",
-  //   des: "DestinyEuro is a study abroad platform with a sleek and user-friendly UI, designed to make the process of exploring and applying to international universities effortless.",
-  //   img: "/de.png",
-  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/cloud.png"],
-  //   link: "https://destinyeuro.com/",
-  // },
+  {
+    id: 2,
+    title: "DestinyEuro - Study Abroad",
+    des: "DestinyEuro is a study abroad platform with a sleek and user-friendly UI, designed to make the process of exploring and applying to international universities effortless.",
+    img: "/de.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/cloud.png"],
+    link: "https://destinyeuro.com/",
+  },
   // {
   //   id: 3,
   //   title: "Light Charity - A Blood Bank Charity ",
