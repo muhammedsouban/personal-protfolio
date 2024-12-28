@@ -42,6 +42,7 @@ const BackgroundGradientAnimation = ({
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
   useEffect(() => {
+    if (typeof document !== "undefined") {
     document.body.style.setProperty(
       "--gradient-background-start",
       gradientBackgroundStart
@@ -58,6 +59,7 @@ const BackgroundGradientAnimation = ({
     document.body.style.setProperty("--pointer-color", pointerColor);
     document.body.style.setProperty("--size", size);
     document.body.style.setProperty("--blending-value", blendingValue);
+  }
   }, []);
 
   useEffect(() => {
