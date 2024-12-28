@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence, useMotionValue } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const FollowerPointerCard = ({
+const FollowerPointerCard = ({
   children,
   className,
   title,
@@ -27,7 +27,7 @@ export const FollowerPointerCard = ({
   }, []);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (rect) {
+    if (rect && typeof window !== "undefined") {
       const scrollX = window.scrollX;
       const scrollY = window.scrollY;
       x.set(e.clientX - rect.left + scrollX);
@@ -136,3 +136,5 @@ export const FollowPointer = ({
     </motion.div>
   );
 };
+
+export default FollowPointer
