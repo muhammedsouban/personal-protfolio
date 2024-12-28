@@ -7,6 +7,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FollowPointer } from "./ui/FollowingPointer";
 import Image from "next/image";
+import RotatingBorder from "./ui/ProfileImage";
 
 const Hero = () => {
   return (
@@ -44,7 +45,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 relative items-center">
+      <div className="grid md:grid-cols-2 grid-cols-1 relative items-center">
         <div>
           <p className="uppercase tracking-widest text-xs text-start text-blue-100 ">
             Welcome to My Digital Workspace
@@ -57,7 +58,7 @@ const Hero = () => {
           <p className="text-start font-poppins md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
             Hi! I&apos;m Souban, a Next.js Developer based in India 📍
           </p>
-          <div className="flex flex-col md:flex-row  justify-start items-center gap-3 ">
+          <div className="flex   justify-start items-center gap-3 ">
             <a href="#about">
               <MagicButton
                 title="My works"
@@ -76,12 +77,10 @@ const Hero = () => {
 
           </div>
         </div>
-        <div className="flex justify-end">
+        {/* <ProfileCircle />
+         */}
+        <RotatingBorder />
 
-          <div className="bg-gray-400 rounded-full w-[400px] h-[400px]">
-            <img src="" alt="phtot" />
-          </div>
-        </div>
 
       </div>
     </div>

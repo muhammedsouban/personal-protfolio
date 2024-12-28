@@ -1,8 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
 
 export const PinContainer = ({
   children,
@@ -20,6 +22,11 @@ export const PinContainer = ({
   const [transform, setTransform] = useState(
     "translate(-50%,-50%) rotateX(0deg)"
   );
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const onMouseEnter = () => {
     setTransform("translate(-50%,-50%) rotateX(40deg) scale(0.8)");
@@ -54,7 +61,7 @@ export const PinContainer = ({
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </div>
-      <PinPerspective title={title} href={href} />
+      {isClient ? <PinPerspective title={title} href={href} /> : null}
     </Link>
   );
 };
