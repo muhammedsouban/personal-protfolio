@@ -68,7 +68,7 @@ const Hero = () => {
               />
             </a>
 
-            <a href="/soubanResume.pdf" download>
+            <a href="/SoubanResume.pdf" download>
               <MagicButton
                 title="Download cv"
                 icon={<FaDownload />}
