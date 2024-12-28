@@ -1,3 +1,4 @@
+"use client"
 import Approach from "@/components/Approach";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
@@ -17,12 +18,12 @@ export default function Home() {
           navItems={navItems}
         />
         <Hero />
-        <Grid/>
-        <RecentProjects/>
-        <Clients/>
-        <Experience/>
-        <Approach/>
-        <Footer/>
+        <Grid />
+        <RecentProjects />
+        <Clients />
+        <Experience />
+        <Approach />
+        <Footer />
       </div>
     </main>
   );
