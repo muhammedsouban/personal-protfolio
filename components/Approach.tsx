@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import React from "react";
 
@@ -11,9 +12,9 @@ const Approach = () => {
         My <span className="text-purple">approach</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
-        <Card title="Planning & Strategy" 
-        icon={<AceternityIcon order="Phase 1" />}
-        des="We'll collaborate to map out your website's goals, target audience, 
+        <Card title="Planning & Strategy"
+          icon={<AceternityIcon order="Phase 1" />}
+          des="We'll collaborate to map out your website's goals, target audience, 
           and key functionalities. We'll discuss things like site structure, 
           navigation, and content requirements."
         >
@@ -38,7 +39,7 @@ const Approach = () => {
             ]}
             dotSize={2}
           />
-        
+
         </Card>
         <Card
           title="Development & Launch"
@@ -67,7 +68,7 @@ const Card = ({
   title: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
-  des:string;
+  des: string;
 }) => {
   const [hovered, setHovered] = React.useState(false);
   return (
@@ -113,10 +114,10 @@ const Card = ({
   );
 };
 
-const AceternityIcon = ({order}:{order:string}) => {
+const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
-    
+
       <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
         <span
           className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]

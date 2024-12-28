@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { CiMail } from "react-icons/ci";
 
 import { socialMedia } from "@/data";
